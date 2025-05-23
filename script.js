@@ -9,11 +9,8 @@ const findweather=async ()=>{
         let city=document.getElementById('city').value
         const key="139268859f984c5abee153728252205"
 
-        const url =`http://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=no`
+        const url =`https://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=no`
 
-        //i have removed the api url because of the key privacy 
-        // it is from weatherapi.com
-        //
 
         await fetch(url).then((res)=>res.json()).then(data=>{
         console.log(data);
