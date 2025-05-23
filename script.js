@@ -7,7 +7,7 @@ const findweather=async ()=>{
     try{
         text.innerHTML=""
         let city=document.getElementById('city').value
-        const key=""
+        const key="139268859f984c5abee153728252205"
 
         const url =`http://api.weatherapi.com/v1/current.json?key=${key}&q=${city}&aqi=no`
 
